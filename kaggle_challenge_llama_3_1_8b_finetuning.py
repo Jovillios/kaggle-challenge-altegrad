@@ -123,7 +123,7 @@ trainer = SFTTrainer(
     packing=False,  # Can make training 5x faster for short sequences.
     args=TrainingArguments(
         per_device_train_batch_size=2,
-        gradient_accumulation_steps=8,
+        gradient_accumulation_steps=4,
         warmup_steps=5,
         num_train_epochs=1,  # Set this for 1 full training run.
         # max_steps = 60,
@@ -136,8 +136,6 @@ trainer = SFTTrainer(
         lr_scheduler_type="linear",
         seed=3407,
         output_dir="outputs",
-        report_to="wandb",
-        run_name="Llama-3.1-8B-SFT"
     ),
 )
 
