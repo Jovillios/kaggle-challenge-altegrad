@@ -24,7 +24,7 @@ os.makedirs('/root/.kaggle', exist_ok=True)
 # Get the max_seq_length we need
 
 
-max_seq_length = 10000  # 10 000 tokens ~ 20 000 char max
+max_seq_length = 6000  # 10 000 tokens ~ 20 000 char max
 dtype = None  # None for auto detection. Float16 for Tesla T4, V100, Bfloat16 for Ampere+
 # Use 4bit quantization to reduce memory usage. Can be False.
 load_in_4bit = True
@@ -55,9 +55,9 @@ os.getcwd()
 
 
 def load_data(train=True):
-    path = "/content/data/data/valid"
+    path = "data/data/valid"
     if train:
-        path = "/content/data/data/train/"
+        path = "data/data/train/"
 
     # load description (listdir)
     descriptions = []
