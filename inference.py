@@ -41,7 +41,7 @@ def formatting_prompts_func_test(examples):
 
 
 def load_test_data():
-    path = "itdata/data/test/test.txt"
+    path = "data/data/test/test.txt"
 
     # load description
     descriptions = []
