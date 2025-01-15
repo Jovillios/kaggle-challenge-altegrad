@@ -1,2 +1,8 @@
 # Mac Lover
 .DS_Store
+
+# Pycache
+__pycache__/
+
+# pred
+pred/
